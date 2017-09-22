@@ -18,3 +18,8 @@ This is a video player library for android app development.
  
 
 # Add following code in your project
+
+<FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
