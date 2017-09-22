@@ -13,6 +13,10 @@ This is a video player library for android app development.
 	
 		dependencies {
 	        compile 'com.github.Shijocs007:VideoPlayerExample-Android:0.1.0' // get INTERNET permission in the app manifest
+		<FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 	}
 
  
@@ -21,7 +25,4 @@ This is a video player library for android app development.
 
 add the following code in your xml
 
-<FrameLayout
-        android:id="@+id/content_frame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
