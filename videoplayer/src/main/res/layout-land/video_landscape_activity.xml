@@ -1,0 +1,76 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/landscap_layout_main"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/video_view_layout"
+        android:layout_height="match_parent"
+        >
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="3m:55s"/>
+        <ImageView
+            android:id="@+id/play_button"
+            android:layout_width="50dp"
+            android:src="@drawable/icon_play_button"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp" />
+        <ImageView
+            android:id="@+id/pause_button"
+            android:layout_width="50dp"
+            android:src="@drawable/pause_btn_icon"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp" />
+        <ImageView
+            android:id="@+id/volume_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/volume_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/full_screen_btn"
+            android:layout_marginBottom="20dp"
+            />
+        <ImageView
+            android:id="@+id/full_screen_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/close_full_screen_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            />
+        <ImageView
+            android:id="@+id/volume_mute_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/volume_mute_icon"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/full_screen_btn"
+            android:layout_marginBottom="20dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
