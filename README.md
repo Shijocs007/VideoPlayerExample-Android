@@ -9,3 +9,9 @@ This is a video player library for android app development.
 			maven { url 'https://jitpack.io' }
 		}
 	}
+	
+	
+		dependencies {
+	        compile 'com.github.Shijocs007:VideoPlayerExample-Android:0.1.0'
+	}
+
