@@ -23,11 +23,18 @@ This is a video player library for android app development.
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
  
+ ## Add the below code in the java class
+ 
+ 	 VideoManager.getInstance().setmActivity(this); // this line is very important, pass the activity here
+        Bundle bundle = new Bundle();
+        bundle.putString("url","http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4");  //pass the url here
+        Fragment videoView = new VideoViewFragment();
+        videoView.setArguments(bundle);
+        FragmentManager fragmentManager1 = getSupportFragmentManager();
+        android.support.v4.app.FragmentTransaction fragmentTransaction1 = fragmentManager1.beginTransaction();
+        fragmentTransaction1.replace(R.id.content_frame, videoView, "video_view_example");
+        fragmentTransaction1.commit();
  
  
-
-## Add following code in your project
-
-add the following code in your xml
 
 
