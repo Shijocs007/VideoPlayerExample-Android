@@ -16,3 +16,5 @@ This is a video player library for android app development.
 	}
 
  
+
+# Add following code in your project
