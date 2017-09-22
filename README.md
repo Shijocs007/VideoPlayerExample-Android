@@ -17,11 +17,11 @@ This is a video player library for android app development.
 
  
 
-# Add following code in your project
+## Add following code in your project
 
 add the following code in your xml
 
-FrameLayout
+<FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/
+        android:layout_height="wrap_content"/>
