@@ -40,6 +40,8 @@
 	
 ### Screenshots
 
+![ScreenShot](https://github.com/Shijocs007/VideoPlayerExample-Android/blob/master/screenshots/videoview3.png)
+![ScreenShot](https://github.com/Shijocs007/VideoPlayerExample-Android/blob/master/screenshots/videoview2.png)
 ![ScreenShot](https://github.com/Shijocs007/VideoPlayerExample-Android/blob/master/screenshots/videoview1.png)
  
  
