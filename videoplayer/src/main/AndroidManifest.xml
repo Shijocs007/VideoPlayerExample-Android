@@ -10,7 +10,6 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="landscape">
-
         </activity>
     </application>
 

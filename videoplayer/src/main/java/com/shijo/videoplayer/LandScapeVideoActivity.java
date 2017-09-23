@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -45,9 +46,14 @@ public class LandScapeVideoActivity extends AppCompatActivity {
         fullScreenBtn  = (ImageView) findViewById(R.id.full_screen_btn);
         videoView   =   (VideoView) findViewById(R.id.video_view);
 
+        timeTxt.setVisibility(View.GONE);
+
         videoView.setVideoPath(url);
         videoView.seekTo(1000);
         videoView.setClickable(true);
+        MediaController mediaController = new  MediaController(this);
+        mediaController.setAnchorView(videoView);
+        videoView.setMediaController(mediaController);
 
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
@@ -78,7 +84,7 @@ public class LandScapeVideoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 videoView.start();
                 playBtn.setVisibility(View.GONE);
-                startCoonterforTime();
+              //  startCoonterforTime();
             }
         });
 
@@ -138,7 +144,6 @@ public class LandScapeVideoActivity extends AppCompatActivity {
             }
         }.start();
     }
-
     private void startCoonterforTime() {
 
         new CountDownTimer(videoDuration, 1000){
