@@ -38,8 +38,9 @@
         fragmentTransaction1.replace(R.id.content_frame, videoView, "video_view_example");
         fragmentTransaction1.commit();
 	
-	
-	![ScreenShot](https://raw.github.com/{username}/{repository}/{branch}/{path})
+### Screenshots
+
+![ScreenShot](https://github.com/Shijocs007/VideoPlayerExample-Android/blob/master/screenshots/videoview1.png)
  
  
 
