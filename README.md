@@ -9,11 +9,11 @@
 		maven { url 'https://jitpack.io' }
 	}
 	}
+	
+		dependencies {
+	        compile 'com.github.Shijocs007:VideoPlayerExample-Android:0.2.0'
+		}
 
-
-	dependencies {
-        compile 'com.github.Shijocs007:VideoPlayerExample-Android:0.1.0' // get INTERNET permission in the app manifest
-}
 
 ### 2.Add Internet Permission in Manifest
 
@@ -37,6 +37,9 @@
         android.support.v4.app.FragmentTransaction fragmentTransaction1 = fragmentManager1.beginTransaction();
         fragmentTransaction1.replace(R.id.content_frame, videoView, "video_view_example");
         fragmentTransaction1.commit();
+	
+	
+	![ScreenShot](https://raw.github.com/{username}/{repository}/{branch}/{path})
  
  
 
